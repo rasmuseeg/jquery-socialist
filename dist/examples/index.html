@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link href="../css/jquery.socialist.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+        <script src="../../assets/underscore-min.js" type="text/javascript"></script>
+        <script src='../../assets/jquery.isotope.min.js'></script>
+        <script src='../../assets/jquery.cross-domain-ajax.js'></script>
+        <script src='../js/networks/twitter.js'></script>
+        <script src='../js/networks/instagram.js'></script>
+        <script src='../js/jquery.socialist.js'></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var $container = $('#content');
+                $container.socialist();
+                var networks = Socialist.Networks;
+                // Instagram
+                var instagram = new networks.Instagram('70f8242cd8a74fca8a9c5edfba933993','385c1f44961b4a399e9c51e592156231');
+                instagram.Attach($container[0]);
+                
+                // Twitter
+                var twitter = new networks.Twitter('70f8242cd8a74fca8a9c5edfba933993','385c1f44961b4a399e9c51e592156231');
+                twitter.Attach($container[0]);
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="content"></div>
+    </body>
+</html>

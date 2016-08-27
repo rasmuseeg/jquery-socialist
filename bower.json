@@ -1,0 +1,19 @@
+{
+  "name": "jquery.socialist",
+  "version": "1.0.3",
+  "main": "jquery.socialist.min.js",
+  "keywords": [
+    "jquery"
+  ],
+  "authors": [
+    "me"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

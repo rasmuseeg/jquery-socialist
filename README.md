@@ -73,7 +73,7 @@ Options
     **network definitions**
     A javascript object containing the name of the network, id and other network specific parameters.
     Most networks require only the id. Some networks such as Craiglist and Flickr require additional options.
-    
+
         {name:'linkedin',id:'linkedin-companyname'},
         {name:'facebook',id:'(facebook-pagename)'},
         {name:'tumblr',id:'(tumblr-blogname)'},
@@ -85,7 +85,7 @@ Options
         {name:'rss',id:'http://www.makebetterwebsites.com/feed/'},
         {name:'craigslist',id:'boo',areaName:'southcoast'},
         {name:'instagram',id:'socialmedia',apiKey:'(your-instagram-api-key here)'},
-        
+
     **random**
     true or false; default value is: true
     **isotope**

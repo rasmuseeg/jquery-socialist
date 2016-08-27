@@ -1,0 +1,111 @@
+@import (refrence) "mixins/network";
+
+.social-helper(@bg-color, @image-url, @width:150px){
+    .foot {
+    background-color:@bg-color;
+    }  
+    .content img {
+        width:@width;
+    } 
+    .api {
+        background-image:url('@{image-url}');
+    }
+}
+
+.socialist-pinterest{
+    .social-helper(#cc0000,'images/32/pinterest-32x32.png');
+}
+
+.socialist-linkedin .content img {
+    width:70px !important;
+    max-width:70px !important;
+    min-width:70px !important;
+    float:left;
+}
+.socialist-linkedin .foot {
+    background-color:#4875B4;
+}
+.socialist-linkedin .api {
+    background-image:url('images/32/linkedin-32x32.png');
+}  
+
+.socialist-rss .foot {
+    background-color:#FF7400;
+}
+.socialist-rss .api {
+    background-image:url('images/32/rss-32x32.png');
+}
+
+.socialist-facebook .foot {
+    background-color:#3B5998;
+}
+.socialist-facebook .api {
+    background-image:url('images/32/facebook-32x32.png');
+}
+
+.socialist-flickr .foot {
+    background-color:#dfdfdf;
+}  
+.socialist-flickr .api {
+    background-image:url('images/32/flickr-32x32.png');
+}  
+
+.socialist-twitter .content  img {
+    width:60px !important;
+    max-width:60px !important;
+    min-width:60px !important;
+    float:left;
+}
+.socialist-twitter .foot {
+   background-color:#4099ff;
+}
+.socialist-twitter .api {
+    background-image:url('images/32/twitter-32x32.png');
+}  
+
+.socialist-tumblr .foot {
+   background-color:#00225F;
+}
+.socialist-tumblr .api {
+    background-image:url('images/32/tumblr-32x32.png');
+}  
+
+.socialist-craigslist .foot {
+   background-color:#700070;
+}
+.socialist-craigslist .api {
+    background-image:url('images/32/craigslist-32x32.png');
+}  
+
+
+.socialist-google .foot {
+   background-color:#d61e1e;
+}
+.socialist-google .content img {
+    width:auto !important;
+    min-width:100px !important;
+}
+.socialist-google .api {
+    background-image:url('images/32/google-32x32.png');
+}  
+
+.socialist-youtube .api {
+    background-image:url('images/32/youtube-32x32.png');
+}  
+
+.socialist-instagram .content img {
+    width:150px;
+} 
+.socialist-instagram .api {
+    background-image:url('images/32/instagram-32x32.png');
+}
+
+.socialist-vimeo .foot {
+    background-color:#4ebbff;
+}  
+.socialist-vimeo .content img {
+    width:150px;
+} 
+.socialist-vimeo .api {
+    background-image:url('images/32/vimeo-32x32.png');
+}  
